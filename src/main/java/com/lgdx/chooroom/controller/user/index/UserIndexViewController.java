@@ -11,5 +11,5 @@ public class UserIndexViewController {
         return "user/index";
     }
 
-    
+
 }

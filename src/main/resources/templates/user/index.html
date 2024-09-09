@@ -34,6 +34,23 @@
           margin: 0;
           padding: 0;
         }
+
+        .room-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            width: 150px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -140,16 +157,16 @@
             <div class="div9">디럭스 룸</div>
             <div class="_100-000">100,000원 ~</div>
             <div class="rectangle-25"></div>
-            <img class="group-62" src="group-61.svg" />
-            <img class="vector-22" src="vector-21.svg" />
-            <div class="div10">예약하기</div>
+            <img class="group-6" src="group-60.svg" />
+            <img class="vector-2" src="vector-20.svg" />
+            <div class="div10" id="reserveButton">예약하기</div> <!-- 클릭 이벤트 추가 -->
             <div class="rectangle-47"></div>
             <div class="div11">평균 소음도</div>
             <div class="_19-db">
-            <span>
-              <span class="_19-db-span3">19db</span>
-              <span class="_19-db-span4">, 굉장히 조용해요</span>
-            </span>
+        <span>
+            <span class="_19-db-span">19db</span>
+            <span class="_19-db-span2">, 굉장히 조용해요</span>
+        </span>
             </div>
             <div class="_40-m-2">40m^2 | 침실, 샤워부스 | 오션뷰</div>
             <div class="div12">
@@ -159,6 +176,11 @@
             </div>
             <div class="_1">1박 기준</div>
             <div class="_2">남은 객실 2</div>
+
+            <!-- 추가될 갤러리 영역 -->
+            <div class="room-gallery" id="roomGallery" style="display: none;">
+                <!-- 여기에 클릭 시 갤러리가 생성될 예정 -->
+            </div>
         </div>
         <div class="room">
             <div class="div9">디럭스 룸</div>
@@ -191,5 +213,8 @@
         </div>
     </div>
 </div>
+
+<!-- 스크립트 파일 연결 -->
+<script src="js/script.js"></script>
 </body>
 </html>
